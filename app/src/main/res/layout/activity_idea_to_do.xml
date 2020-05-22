@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IdeaToDo">
+
+    <TextView
+        android:id="@+id/selectedIdeatxt"
+        android:layout_width="221dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center_horizontal"
+        android:text="What to do today?"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_palette_24px" />
+
+    <Button
+        android:id="@+id/decidebtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="388dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="56dp"
+        android:background="@android:color/background_light"
+        android:fontFamily="@font/baloo"
+        android:text="Get today's idea !"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/addIdeatxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:hint="Add new idea here..."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addIdeaBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedIdeatxt"
+        app:layout_constraintVertical_bias="0.932" />
+
+    <Button
+        android:id="@+id/addIdeaBtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="223dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="144dp"
+        android:background="@android:color/background_dark"
+        android:fontFamily="@font/baloo"
+        android:text="Add idea"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/decidebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

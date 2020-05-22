@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PandemicPack</string>
+    <string name="title_activity_crowd">Map</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#ADABB3</color>
+    <color name="colorAccent">#FAF9F4</color>
+
+    <color name="iconbg">#2C000000</color>
+    <color name="obese">#F31606</color>
+    <color name="over">#FF9800</color>
+    <color name="less">#146CB3</color>
+    <color name="normal">#26972B</color>
+</resources>

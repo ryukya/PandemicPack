@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/tops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:fontFamily="@font/baloo"
+            android:gravity="bottom"
+            android:padding="10dp"
+            android:text="Pandemic Package"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/ibtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:clickable="true"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_info" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@id/tops"
+        android:background="#000000"
+        android:fontFamily="sans-serif"
+        android:gravity="bottom|right"
+        android:padding="10dp"
+        android:text="2020-Felisia-ClassProject"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/one"
+        android:layout_below="@id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/RQna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@color/iconbg"
+                app:srcCompat="@drawable/ic_qa" />
+
+            <Button
+                android:id="@+id/bQna"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img1"
+                android:background="@android:color/background_light"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Corona Virus QnA "
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="269dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@color/iconbg"
+                app:srcCompat="@drawable/ic_palette_24px" />
+
+            <Button
+                android:id="@+id/bAct"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img2"
+                android:background="@android:color/background_light"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Quarantine Ideas"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="269dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tw0"
+        android:layout_below="@id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/RHealt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@color/iconbg"
+                app:srcCompat="@drawable/ic_arm" />
+
+            <Button
+                android:id="@+id/bHealth"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img3"
+                android:background="@android:color/background_light"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Fitness Check"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="269dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RGrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@color/iconbg"
+                app:srcCompat="@drawable/ic_report" />
+
+            <Button
+                android:id="@+id/bGrap"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img4"
+                android:background="@android:color/background_light"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Covid Live report"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="269dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/three"
+        android:layout_below="@id/tw0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/RCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@color/iconbg"
+                app:srcCompat="@drawable/ic_phone_in_talk_black_24dp" />
+
+            <Button
+                android:id="@+id/bCall"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img5"
+                android:background="@android:color/background_light"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Emegency Call"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="269dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RCrowd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@color/iconbg"
+                app:srcCompat="@drawable/ic_crowd" />
+
+            <Button
+                android:id="@+id/bCrowd"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img6"
+                android:background="@android:color/background_light"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Crowd Detector"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="269dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/three"
+        android:fontFamily="sans-serif"
+        android:gravity="bottom|center"
+        android:padding="10dp"
+        android:text="PandemicPack-2020-Felisia"
+        android:textSize="10sp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,2 @@
+rootProject.name='PandemicPack'
+include ':app'
